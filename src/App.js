@@ -1,21 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar'
+import Playlist from "./components/Playlist"
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+        <div className="app">
+            <NavBar/>
+
+            <Playlist/>
+
+            <div className="media-player-wrapper">
+                {/*<MediaPlayer
+                    ref={c => this._mediaPlayer = c}
+                    src={currentTrack.src}
+                    autoPlay={autoPlay}
+                    loop={repeatTrack}
+                    currentTrack={currentTrack.label}
+                    repeatTrack={repeatTrack}
+                    onPrevTrack={() => this._navigatePlaylist(-1)}
+                    onNextTrack={() => this._navigatePlaylist(1)}
+                    onRepeatTrack={() => { this.setState({ repeatTrack: !repeatTrack }) }}
+                    onPlay={() => !autoPlay && this.setState({ autoPlay: true })}
+                    onPause={() => this.setState({ autoPlay: false })}
+                    onEnded={() => !repeatTrack && this._navigatePlaylist(1)}
+                />
+                <Playlist
+                    tracks={playlist}
+                    currentTrack={currentTrack}
+                    onTrackClick={this._handleTrackClick}
+                />
+                */}
+            </div>
+        </div>
+    )
 }
 
 export default App;

@@ -1,0 +1,43 @@
+.media-playlist {
+  background-color: #282F31;
+  color: #fff;
+  width: 30%;
+  height: inherit;
+}
+
+.media-playlist-header {
+  padding: 2px;
+  background-color: #373d3f;
+}
+
+.media-playlist-title {
+  font-size: 14px;
+  text-align: center;
+}
+
+.media-playlist-tracks {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid #373d3f;
+}
+
+.media-playlist-track {
+  padding: 12px;
+  cursor: pointer;
+  text-align: left;
+
+  /*
+  & + & {
+    border-top: 1px solid #373d3f;
+  }
+
+  &.is-active {
+    color: #8bb955
+  }
+  */
+}
+
+.media-playlist-track.is-active {
+  color: #8bb955
+}

@@ -7,6 +7,9 @@ import {Router} from 'react-router-dom'
 import createBrowserHistory from 'history/createBrowserHistory'
 
 import './index.css';
+import './components/playlist.css';
+import 'bootstrap/dist/css/bootstrap.css'
+
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './reducers'
